@@ -43,6 +43,12 @@
 #define WGETRH _IO(2, 1)
 #define WGETRB _IO(2, 2)
 
+// FIFO does not have a major, 0 is a placeholder, it might potentially conflict
+// with memory device driver
+#define FIFOSKERNW _IOW(0, 0, 4)
+#define FIFOSKERNR _IOW(0, 1, 4)
+#define FIFOSCLOSERM _IOW(0, 2, 4)
+
 // Extended fs_fdflags
 #define WASI_EXT_FDFLAG_CTRL_BIT ((__wasi_fdflags_t)0x0020)
 #define WASI_EXT_FDFLAG_MASK ((__wasi_fdflags_t)0xffc0)

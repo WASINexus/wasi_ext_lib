@@ -62,6 +62,10 @@ pub const WGETGS: c_ulong = 2147746304;
 pub const WGETRH: c_ulong = 513;
 pub const WGETRB: c_ulong = 514;
 
+pub const FIFOSKERNW: c_ulong = 1074003968;
+pub const FIFOSKERNR: c_ulong = 1074003969;
+pub const FIFOSCLOSERM: c_ulong = 1074003970;
+
 pub use wasi::SIGNAL_KILL;
 
 type ExitCode = i32;
